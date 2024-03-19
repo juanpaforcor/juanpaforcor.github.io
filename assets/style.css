@@ -23,6 +23,71 @@ a:hover {
     text-decoration: none !important;
 }
 
+.navbar {
+    background-color: transparent !important; /* Remove background color */
+    border-bottom: 1px solid #CCCCCC; /* Thin grey line */
+    margin-bottom: 20px; /* Adds some space below the navbar */
+}
+
+.skills-section {
+    text-align: left;
+    max-width: 100%; /* Adjust based on layout */
+    margin: 0px auto;
+}
+
+.skills-section .header {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.skills-list li {
+    background-color: #fafbfc; /* Light gray background */
+    font-size: 0.8rem;
+    color: #6c757d; /* Or any color that fits your design */
+    padding: 2px 4px;
+    border-radius: 3px; /* Slightly rounded corners for a softer look */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block; /* Display inline for a wrap effect */
+    opacity: 0.8; /* Adds a bit of transparency */
+    margin: 1px; /* Spacing between items */
+}
+
+.skills-list li:hover {
+    background-color: #e8e9ea; /* Very light background on hover */
+    color: #495057; /* Darker text on hover */
+}
+
+.skills-list-sub {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.skills-list-sub li {
+    background-color: #fafbfc; /* Light gray background */
+    font-size: 0.7rem;
+    color: #6c757d; /* Or any color that fits your design */
+    padding: 2px 4px;
+    border-radius: 3px; /* Slightly rounded corners for a softer look */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block; /* Display inline for a wrap effect */
+    opacity: 0.8; /* Adds a bit of transparency */
+    margin: 1px; /* Spacing between items */
+}
+
+.skills-list-sub li:hover {
+    background-color: #e8e9ea; /* Very light background on hover */
+    color: #495057; /* Darker text on hover */
+}
+
+
 .noter {
     font-size: 9pt;
 }
