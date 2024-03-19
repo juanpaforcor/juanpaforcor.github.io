@@ -114,19 +114,25 @@ $(".years").css("color", instyearcolor);
 $(".years").css("font-size", instyearsize);
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Get current URL
-    var currentUrl = window.location.href;
-
-    // Get all nav links
-    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-    // Loop through nav links to find a match with the current URL
-    navLinks.forEach(function(link) {
-        if (currentUrl === link.href) {
-            // Remove active class from all links first to ensure no duplicates
-            navLinks.forEach(link => link.classList.remove('active'));
-            // Add active class to the current page's nav link
-            link.classList.add('active');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const currentUrl = window.location.href;
+    
+    let activeSet = false;
+    for (let i = 0; i < navLinks.length; i++) {
+        // Remove trailing slash for comparison
+        const linkUrl = navLinks[i].href.replace(/\/$/, "");
+        if (currentUrl.startsWith(linkUrl)) {
+            // Check if we're at the root URL or specific page
+            if (currentUrl.replace(/\/$/, "") === linkUrl || currentUrl.includes(linkUrl + "/index.html")) {
+                navLinks[i].classList.add('active');
+                activeSet = true;
+                break; // Stop the loop once the active class is set
+            }
         }
-    });
+    }
+
+    // Default to setting the first nav item active if none is matched
+    if (!activeSet && navLinks.length > 0) {
+        navLinks[0].classList.add('active');
+    }
 });
