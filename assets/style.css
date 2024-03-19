@@ -11,6 +11,17 @@ a:hover {
     /* color: #444; */
 }
 
+/* Non-Active Link - Lighter Grey */
+.navbar-nav .nav-link {
+    color: #ddd !important; /* Light grey */
+}
+
+/* Active Link - Black */
+.navbar-nav .nav-link.active {
+    color: #000 !important; /* Black */
+    font-weight: normal;
+    text-decoration: none !important;
+}
 
 .noter {
     font-size: 9pt;

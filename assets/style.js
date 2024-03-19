@@ -112,3 +112,21 @@ $(".institution").css("color", insttitlecolor);
 $(".institution").css("font-size", insttitlesize);
 $(".years").css("color", instyearcolor);
 $(".years").css("font-size", instyearsize);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get current URL
+    var currentUrl = window.location.href;
+
+    // Get all nav links
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Loop through nav links to find a match with the current URL
+    navLinks.forEach(function(link) {
+        if (currentUrl === link.href) {
+            // Remove active class from all links first to ensure no duplicates
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Add active class to the current page's nav link
+            link.classList.add('active');
+        }
+    });
+});
