@@ -24,9 +24,15 @@ a:hover {
 }
 
 .navbar {
-    background-color: transparent !important; /* Remove background color */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fcfcfc !important;; /* transparent !important Remove background color */
     border-bottom: 1px solid #CCCCCC; /* Thin grey line */
     margin-bottom: 20px; /* Adds some space below the navbar */
+    background-image: none; /* Remove any background image */
+    box-shadow: none
 }
 
 .skills-section {
@@ -87,6 +93,57 @@ a:hover {
     color: #495057; /* Darker text on hover */
 }
 
+.highlighted-skill {
+    background-color: #dbefff; /* Example: a light blue background for highlighted skills */
+    color: #0275d8; /* Darker text color for better contrast */
+    font-weight: bold; /* Optionally make the text bolder */
+}
+
+.papertitle-link, .papertitle-link:visited {
+    color: #000000 !important; /* Dark grey color for links */
+    text-decoration: none; /* Removes underline */
+}
+
+.papertitle-link:hover, .papertitle-link:focus {
+    color: #79808a !important; /* Change color on hover/focus for visual feedback */
+    /* No text-decoration to avoid underlining */
+}
+
+.papertitle, .papertitle:visited {
+    color: #000000 !important; /* Dark grey color for links */
+    text-decoration: none; /* Removes underline */
+}
+
+.papertitle:hover, .papertitle:focus {
+    color: #697077 !important; /* Change color on hover/focus for visual feedback */
+    /* No text-decoration to avoid underlining */
+}
+
+.project-image img {
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity change */
+    opacity: 1; /* Default opacity */
+}
+
+.project-image:hover img {
+    opacity: 0.7; /* Reduced opacity on hover */
+}
+
+.back-to-projects a {
+    display: inline-block;
+    /* background-color: #fafbfc; /* Light grey background, adjust as needed */
+    color: #495057; /* Text color */
+    padding: 8px 16px;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 0.9rem; /* Adjust based on your design */
+    margin-top: 20px; /* Spacing from the content above */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.back-to-projects a:hover {
+    background-color: #fafbfc; /* Slightly darker on hover */
+    color: #495057; /* Change color on hover for visual feedback */
+}
 
 .noter {
     font-size: 9pt;

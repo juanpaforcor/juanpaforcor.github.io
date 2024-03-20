@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Frontier Tech Engineer - Software-Hardware, Samsung Research America">
+        <meta name="author" content="Juan Pablo Forero Cortes">
+        <meta name="theme-color" content="#222222">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/apple-touch-icon_3.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/apple-touch-icon_3.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/nicons/apple-touch-icon_3.png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style.css">
+        
+        <title>Nimbus - Juan Pablo Forero</title>
+
+
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="projects.html">Projects<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="timeline-impact.html">Timeline & Impact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+
+        <div class="container pt-5 allstuffp">
+            <div class="row pt-5 allstuff">
+                <div class="col-md-4 pt-5">
+                    <div class="fixed-posi">
+                        <p class="name text-center">Nimbus</p>
+                        <div class="text-center">
+                            <img src="images/Nimbus/Nimbus_B.png" class="profilepic pt-3 pb-2">
+                        </div>            
+                    </div>
+                </div>
+                <div class="col-md-8 pt-5 about">
+                    <h2 class="header pt-5">Intuitive 3D hand tracking and gesture recognition</h2>
+                        
+                    <span class="conf"> In 2018, touchless interaction was a promising field but faced limitations with existing technologies. Cameras raised privacy concerns, radar based solutions were costly and lacked resolution, and other options weren't yet ready for real-world use. Nimbus sought to change this, aiming for a touchless solution that delivered performance and privacy without excessive cost.
+                    <br><br>
+                    Hand Position Tracking: Nimbus achieved precise hand position tracking in 3D space through careful analysis of the reflected IR light patterns. Custom circuit boards ensured microsecond-level precision in LED illumination timing, creating distinct reflections based on hand position. Combined with a carefully calibrated system, these reflections allowed for statistical triangulation to determine the hand's coordinates within the interaction zone. Techniques like Kalman and 1€ filtering were employed to ensure more stable hand position tracking that wouldn't be jittery or erratic.
+                    <br><br>
+                    Hand Gesture Identification: To recognize gestures, Nimbus relied on a multi-step process. First, signal processing techniques, including noise reduction and edge detection, helped isolate the hand's outline from the raw sensor data. Principal Component Analysis (PCA) was used to simplify these representations, making them more computationally efficient. Finally, a shallow Random Forest classifier, for its speed and accuracy, matched these features to a library of predefined hand gestures, enabling real-time gesture recognition. 
+                    <br><br>
+                    Nimbus showcased reasonable accuracy while excelling in cost and privacy, opening doors for new applications. It offered intuitive hands-free control in environments like medical settings or AR/VR. This success demonstrated a refined approach to touchless interaction. Additionally, Nimbus was patented and showcased in CES 2018 as part of the smart car concept by Samsung, highlighting its real-world impact and potential.  
+                    </span>
+
+                    <!-- Skills - High-Level -->
+                    <div class="skills-section mt-5">
+                        <ul class="skills-list mt-0">
+                            <li class="highlighted-skill">Software Engineering</li>
+                            <li class="highlighted-skill">Hardware System Design</li>
+                            <li>Rapid Prototyping</li>
+                            <li class="highlighted-skill">Machine Learning</li>
+                            <li>Project Management</li>
+                        </ul>
+                    </div>
+                    <!-- Skills - Software Development -->
+                    <div class="skills-section mt-1">
+                        <ul class="skills-list-sub mt-0">
+                            <li class="highlighted-skill">C</li>
+                            <li class="highlighted-skill">C++</li>
+                            <li class="highlighted-skill">C#</li>
+                            <li class="highlighted-skill">Unity 3D</li>
+                            <li>Unreal Engine</li>
+                            <li class="highlighted-skill">Android</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>Assembly</li>
+                            <li>HDL</li>
+                            <li>Embedded Linux</li>
+                        </ul>
+                    </div>
+                    <!-- Skills - Hardware Development -->
+                    <div class="skills-section mt-1">
+                        <ul class="skills-list-sub mt-0">
+                            <li class="highlighted-skill">Altium Designer</li>
+                            <li class="highlighted-skill">LTspice</li>
+                            <li>Cadence OrCAD</li>
+                        </ul>
+                    </div>
+                    <!-- Skills - Design -->
+                    <div class="skills-section mt-1">
+                        <ul class="skills-list-sub mt-0">
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Premiere Pro</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-0 mt-5">
+                        <p class="paper my-2 pl-2">
+                        <a class="tag" href="https://thinktankteam.info/projects/project-nimbus/" target="_blank">Website</a><span class="tagsep"></span><br>
+
+                        <span class="conf"> United States Patent 
+                        <a class="confshort" href="https://patents.google.com/patent/US10481736B2/en"> (US10481736B2) </a></span><br>
+                        <a class="tag" href="papers/Nimbus_C.pdf" target="_blank">PDF</a><span class="tagsep"></span>
+
+                        </p>
+                    </div>
+
+                    <div class="back-to-projects mt-3">
+                        <a href="projects.html">&#60; Back to Projects</a>
+                    </div>
+                </div>                
+            </div>   
+        </div>
+
+        
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="assets/style.js"></script>
+    </body>
+</html>
